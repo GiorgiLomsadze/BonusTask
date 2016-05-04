@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="assign1.lomsadze.giorgi.bonustask.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_maps"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maps"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Google Inc."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Uninstall"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="#bbf946"
+        android:background="#ffffff" />
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        android:id="@+id/button2"
+
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:background="#bbf946"
+        android:textColor="#fdfdfd"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView2"
+            android:layout_weight="1"
+            android:src="@drawable/ic_billion"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:src="@drawable/ic_rating"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:src="@drawable/ic_travel"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            android:src="@drawable/ic_similar"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Get the latest Google Maps app."
+        android:id="@+id/textView3"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:background="#c5fbb4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Whats New"
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:paddingLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-Easily find hours and phone numbers for"
+            android:id="@+id/textView5"
+            android:paddingLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="large department stores with new"
+            android:id="@+id/textView6"
+            android:paddingLeft="50dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="department store directory in Google Maps."
+            android:id="@+id/textView7"
+            android:textSize="20sp"
+            android:paddingLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="(UsSonly)"
+            android:id="@+id/textView8"
+            android:paddingLeft="50dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
